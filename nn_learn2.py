@@ -29,7 +29,7 @@ model.add(layers.Dense(2, activation='sigmoid'))
 # 3 выходной слой
 model.add(layers.Dense(1, activation='sigmoid'))
 # model.summary()
-# оптимизатор со скоростью обучения 0.01
+# оптимизатор со скоростью обучения 0.1
 adam = tf.optimizers.Adam(learning_rate=0.1)
 model.compile(loss='mean_squared_error',
               optimizer=adam,
